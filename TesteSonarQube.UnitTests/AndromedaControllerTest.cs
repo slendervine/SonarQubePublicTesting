@@ -16,12 +16,24 @@ namespace TesteSonarQube.UnitTests
         public void Genesis_Should_ReturnsExpectedString()
         {
             // Act
-            OkObjectResult okObjectResult = _andromedaController.Genesis() as OkObjectResult;
+            var result = _andromedaController.Genesis();
 
             // Assert
-            Assert.NotNull(okObjectResult);
-            Assert.Equal(200, okObjectResult.StatusCode);
-            Assert.Equal("teste", okObjectResult.Value);
+            Assert.NotNull(result);
+            Assert.Equal(200, result.StatusCode);
+            Assert.Equal("teste", result.Value);
+        }
+
+        [Fact]
+        public void Andromeda_Should_ReturnsExpectedString()
+        {
+            // Act
+            var result = _andromedaController.Andromeda();
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.Equal(200, result.StatusCode);
+            Assert.Equal("lançar correntes!", result.Value);
         }
     }
 }
