@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 17
-          distribution: 'zulu' # Alternative distribution options are available.
+          distribution: 'zulu'
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
@@ -45,10 +45,10 @@ jobs:
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"slendervine_SonarQubePublicTesting" /o:"slendervine-key" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet build
-          dotnet test --logger trx --collect "Code coverage" # Executar os testes unitários
+          dotnet test --logger trx --collect "XPlat Code Coverage" --results-directory "TestResults"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
       - name: Upload test results
         uses: actions/upload-artifact@v4
         with:
           name: dotnet-tests
-          path: ${{ github.workspace }}/TestResults
+          path: TestResults
