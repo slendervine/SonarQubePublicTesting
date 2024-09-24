@@ -52,4 +52,3 @@ jobs:
         with:
           name: dotnet-tests
           path: ${{ github.workspace }}/TestResults
-        if: succeeds()
