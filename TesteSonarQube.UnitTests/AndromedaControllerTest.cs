@@ -33,7 +33,7 @@ namespace TesteSonarQube.UnitTests
             // Assert
             Assert.NotNull(result);
             Assert.Equal(200, result.StatusCode);
-            Assert.Equal("lançar correntes!!", result.Value);
+            Assert.Equal("lançar correntes!!!!", result.Value);
         }
     }
 }
