@@ -8,14 +8,14 @@ namespace TesteSonarQube.Controllers
     {
 
         [HttpGet("genesis")]
-        public IActionResult Genesis()
+        public OkObjectResult Genesis()
         {
             string response = "teste";
             return Ok(response);
         }
 
         [HttpGet("andromeda")]
-        public IActionResult Andromeda()
+        public OkObjectResult Andromeda()
         {
             string response = "lançar correntes!";
             return Ok(response);
