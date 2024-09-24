@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteSonarQube", "TesteSonarQube\TesteSonarQube.csproj", "{6340E835-1F86-49B6-9A52-3D4A1E9A097E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteSonarQube.UnitTests", "TesteSonarQube.UnitTests\TesteSonarQube.UnitTests.csproj", "{085F9A89-F18D-4B46-9622-8EC31F91BA10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6340E835-1F86-49B6-9A52-3D4A1E9A097E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6340E835-1F86-49B6-9A52-3D4A1E9A097E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6340E835-1F86-49B6-9A52-3D4A1E9A097E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6340E835-1F86-49B6-9A52-3D4A1E9A097E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{085F9A89-F18D-4B46-9622-8EC31F91BA10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085F9A89-F18D-4B46-9622-8EC31F91BA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085F9A89-F18D-4B46-9622-8EC31F91BA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085F9A89-F18D-4B46-9622-8EC31F91BA10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97CE857B-60DD-4914-8158-2196CDF52A83}
+	EndGlobalSection
+EndGlobal
