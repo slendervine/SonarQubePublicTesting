@@ -7,10 +7,17 @@ namespace TesteSonarQube.Controllers
     public class AndromedaController : ControllerBase
     {
 
-        [HttpGet("nani")]
+        [HttpGet("genesis")]
         public IActionResult Genesis()
         {
             string response = "teste";
+            return Ok(response);
+        }
+
+        [HttpGet("andromeda")]
+        public IActionResult Andromeda()
+        {
+            string response = "lançar correntes!";
             return Ok(response);
         }
     }
