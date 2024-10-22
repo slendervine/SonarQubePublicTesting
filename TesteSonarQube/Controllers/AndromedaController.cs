@@ -20,5 +20,13 @@ namespace TesteSonarQube.Controllers
             string response = "lançar correntes!";
             return Ok(response);
         }
+
+
+        [HttpGet("testeDosGuris/{variavel}")]
+        public OkObjectResult AndromedaVariavel()
+        {
+            string response = "lançar correntes!";
+            return Ok(response);
+        }
     }
 }
