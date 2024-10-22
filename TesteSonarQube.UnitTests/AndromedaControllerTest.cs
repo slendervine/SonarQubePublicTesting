@@ -28,12 +28,12 @@ namespace TesteSonarQube.UnitTests
         public void Andromeda_Should_ReturnsExpectedString()
         {
             // Act
-            var result = _andromedaController.Andromeda() as OkObjectResult;
+            var result = _andromedaController.Andromeda();
 
             // Assert
             Assert.NotNull(result);
             Assert.Equal(200, result.StatusCode);
-            Assert.Equal("lançar correntes!!", result.Value);
+            Assert.Equal("lançar correntes!", result.Value);
         }
     }
 }
